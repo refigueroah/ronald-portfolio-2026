@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Case Study: Biometric Verification | Ronald Figueroa</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#0b1326",
+                        "primary": "#adc7ff",
+                        "secondary": "#ffb68b",
+                        "on-surface-variant": "#c1c6d7",
+                        "primary-container": "#4a8eff",
+                        "on-primary-container": "#00285b"
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body { background-color: #0b1326; color: #dae2fd; }
+        .glass-card { background: rgba(23, 31, 51, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .dot-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0); background-size: 24px 24px; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-primary/30">
+
+    <header class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-16">
+            <div class="text-xl font-bold tracking-tighter text-white">Ronald Figueroa</div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a class="text-slate-400 hover:text-white transition-colors" href="../index.html">← Back to Portfolio</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="#overview">Overview</a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="#solution">Solution</a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="#impact">Impact</a>
+            </nav>
+            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" class="text-slate-400 hover:text-primary transition-colors">
+                <span class="material-symbols-outlined">link</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="dot-grid pt-32 pb-24">
+        <article class="max-w-4xl mx-auto px-8">
+            <header class="mb-16">
+                <span class="text-secondary font-bold uppercase tracking-widest text-xs">IoT & Security Infrastructure</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mt-4 mb-8">Biometric Attendance Verification System</h1>
+                <div class="flex flex-wrap gap-4 text-sm">
+                    <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full">Duration: 12 Months</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full">Role: Lead Project Manager</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full">Stack: Biometrics, SQL, IoT Kiosks</span>
+                </div>
+            </header>
+
+            <div class="glass-card rounded-3xl overflow-hidden mb-16 aspect-video">
+                <img src="../assets/biometric_preview.png" alt="Biometric Kiosk Deployment" class="w-full h-full object-cover">
+            </div>
+
+            <div class="space-y-16">
+                <section id="overview">
+                    <h2 class="text-2xl font-bold text-white mb-4">Project Overview</h2>
+                    <p class="text-on-surface-variant leading-relaxed text-lg">
+                        Implementation of an automated biometric verification system to eliminate identity fraud and streamline attendance tracking across 40+ national locations. This project required a shift from manual paper logs to 24/7 cloud-synced biometric kiosks.
+                    </p>
+                </section>
+
+                <section id="solution" class="glass-card p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-white mb-4">The Solution</h2>
+                    <ul class="space-y-4 text-on-surface-variant">
+                        <li class="flex gap-3"><span class="material-symbols-outlined text-primary">check_circle</span> Deployed customized hardware kiosks with fingerprint and facial recognition.</li>
+                        <li class="flex gap-3"><span class="material-symbols-outlined text-primary">check_circle</span> Developed a real-time dashboard for HR and security oversight.</li>
+                        <li class="flex gap-3"><span class="material-symbols-outlined text-primary">check_circle</span> Integrated end-to-end encryption for sensitive personal data.</li>
+                    </ul>
+                </section>
+
+                <section id="impact">
+                    <h2 class="text-2xl font-bold text-white mb-4">Key Results & Impact</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center p-6 border border-white/5 rounded-xl bg-white/5">
+                            <div class="text-3xl font-bold text-secondary mb-2">40%</div>
+                            <p class="text-xs text-on-surface-variant uppercase tracking-tighter">Fraud Reduction</p>
+                        </div>
+                        <div class="text-center p-6 border border-white/5 rounded-xl bg-white/5">
+                            <div class="text-3xl font-bold text-secondary mb-2">24/7</div>
+                            <p class="text-xs text-on-surface-variant uppercase tracking-tighter">Uptime Monitoring</p>
+                        </div>
+                        <div class="text-center p-6 border border-white/5 rounded-xl bg-white/5">
+                            <div class="text-3xl font-bold text-secondary mb-2">40k+</div>
+                            <p class="text-xs text-on-surface-variant uppercase tracking-tighter">Verified Users</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="border-t border-white/10 pt-16">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-8 bg-primary-container/10 p-8 rounded-3xl border border-primary-container/20">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Need the Technical Details?</h3>
+                            <p class="text-sm text-on-surface-variant">Download the full infographic summarizing the system architecture and data flow.</p>
+                        </div>
+                        <a href="../assets/biometric_infographic.pdf" download="Ronald_Figueroa_Biometric_System_Summary">
+                            <button class="bg-primary-container text-on-primary-container px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                                <span class="material-symbols-outlined">download</span> Download Infographic
+                            </button>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs uppercase tracking-widest text-slate-500">
+            <p>© 2024 Ronald Figueroa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
