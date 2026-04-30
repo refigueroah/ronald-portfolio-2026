@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Case Study: Electoral Analytics | Ronald Figueroa</title>
+    <title>Electoral Analytics Case Study | Ronald Figueroa</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
@@ -28,7 +28,6 @@
         body { background-color: #0b1326; color: #dae2fd; }
         .glass-card { background: rgba(23, 31, 51, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .dot-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0); background-size: 24px 24px; }
-        .gradient-border { border-image: linear-gradient(to right, #adc7ff, #4a8eff) 1; }
     </style>
 </head>
 <body class="font-sans antialiased selection:bg-primary/30 dot-grid">
@@ -45,127 +44,111 @@
     </header>
 
     <main class="pt-32 pb-24">
-        <article class="max-w-6xl mx-auto px-8">
+        <article class="max-w-5xl mx-auto px-8">
             
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
-                <div class="lg:col-span-8">
-                    <span class="text-primary font-bold uppercase tracking-widest text-xs mb-4 block">Institutional Modernization</span>
-                    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">Electoral Registry <br><span class="text-primary">Analytics Platform</span></h1>
-                    <p class="text-xl text-on-surface-variant leading-relaxed mb-8">
-                        Architecting a unified "Single Source of Truth" to eliminate manual data reporting across 20+ national branches.
-                    </p>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">SQL Server</span>
-                        <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">Power BI</span>
-                        <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">ETL Pipelines</span>
-                        <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">Business Intelligence</span>
-                    </div>
+            <header class="mb-16">
+                <span class="text-primary font-bold uppercase tracking-widest text-xs mb-4 block">Institutional Strategic Project</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">Electoral Registry <span class="text-primary">Analytics</span></h1>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">Data Architecture</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">Stakeholder Management</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">Business Intelligence</span>
                 </div>
+            </header>
+
+            <div class="glass-card rounded-[2.5rem] overflow-hidden mb-20 border border-white/10">
+                <img src="../assets/electoral_preview2.jpg" alt="Electoral Dashboard View" class="w-full h-auto">
+            </div>
+
+            <div class="space-y-24">
                 
-                <div class="lg:col-span-4">
-                    <div class="glass-card p-8 rounded-3xl border-l-4 border-l-primary">
-                        <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-primary">bolt</span> Key Impact
-                        </h4>
-                        <div class="space-y-6">
-                            <div>
-                                <p class="text-xs text-slate-500 uppercase tracking-widest mb-1">Reporting Speed</p>
-                                <p class="text-2xl font-bold text-white">-99.9% Latency</p>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-500 uppercase tracking-widest mb-1">Data Accuracy</p>
-                                <p class="text-2xl font-bold text-white">100% Unified</p>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-500 uppercase tracking-widest mb-1">Manual Labor</p>
-                                <p class="text-2xl font-bold text-white">Eliminated</p>
-                            </div>
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-6">The Challenge: <br><span class="text-secondary">Fragmented Data & Manual Latency</span></h2>
+                        <div class="space-y-4 text-on-surface-variant leading-relaxed text-lg">
+                            <p>
+                                Managing a national electoral registry is a high-stakes operation where **accuracy is not optional**. Before this project, the institution faced a critical bottleneck: data was siloed across more than 20 regional branches. 
+                            </p>
+                            <p>
+                                Every time executive leadership required a demographic report or registration update, regional clerks had to manually export spreadsheets. This created a **3-day delay** for critical reports and introduced significant risks of human error and data duplication.
+                            </p>
                         </div>
                     </div>
-                </div>
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <h4 class="text-white font-bold mb-4 uppercase tracking-tighter text-sm">Identified Pain Points:</h4>
+                        <ul class="space-y-4">
+                            <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-secondary">error</span> Lack of a "Single Source of Truth"</li>
+                            <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-secondary">timer</span> 72-hour turnaround for simple data requests</li>
+                            <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-secondary">group_off</span> Regional inconsistencies in demographic categorization</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <div class="order-2 lg:order-1 glass-card p-2 rounded-3xl">
+                         <div class="bg-slate-900 rounded-2xl p-8 space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined">hub</span></div>
+                                <p class="text-sm font-bold">Centralized SQL Data Warehouse</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined">settings_suggest</span></div>
+                                <p class="text-sm font-bold">Automated Daily ETL Pipelines</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined">query_stats</span></div>
+                                <p class="text-sm font-bold">Real-time Power BI Monitoring</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl font-bold text-white mb-6">The Solution: <br><span class="text-primary">Automated Intelligence Ecosystem</span></h2>
+                        <div class="space-y-4 text-on-surface-variant leading-relaxed text-lg">
+                            <p>
+                                As the Senior Analyst, I architected a solution that moved the institution from reactive to proactive. I engineered a centralized **SQL-based Data Warehouse** that automatically synced with regional databases every night.
+                            </p>
+                            <p>
+                                By creating a layer of **Power BI dashboards**, I empowered decision-makers to access real-time registration metrics without calling a single regional clerk. This not only streamlined operations but also ensured that national electoral strategies were based on audited, live data.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="border-t border-white/10 pt-24 text-center">
+                    <h2 class="text-4xl font-bold text-white mb-12">Measurable Outcomes</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="p-10 rounded-3xl bg-primary-container/10 border border-primary-container/20">
+                            <div class="text-5xl font-black text-primary mb-2">99%</div>
+                            <p class="text-sm text-on-surface-variant uppercase tracking-widest font-bold">Faster Reporting</p>
+                        </div>
+                        <div class="p-10 rounded-3xl bg-primary-container/10 border border-primary-container/20">
+                            <div class="text-5xl font-black text-primary mb-2">100%</div>
+                            <p class="text-sm text-on-surface-variant uppercase tracking-widest font-bold">Data Accuracy</p>
+                        </div>
+                        <div class="p-10 rounded-3xl bg-primary-container/10 border border-primary-container/20">
+                            <div class="text-5xl font-black text-primary mb-2">20+</div>
+                            <p class="text-sm text-on-surface-variant uppercase tracking-widest font-bold">Branches Unified</p>
+                        </div>
+                    </div>
+                </section>
+
             </div>
 
-            <div class="relative rounded-[2.5rem] overflow-hidden mb-24 border border-white/10 shadow-2xl">
-                <img src="../assets/electoral_preview.png" alt="Analytics Dashboard" class="w-full h-auto">
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-                
-                <div class="lg:col-span-5 space-y-12">
-                    <section>
-                        <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                            <span class="text-primary">01.</span> The Challenge
-                        </h2>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            Managing a national electoral registry requires extreme precision. Before this intervention, data requests were processed manually across regional offices. This created **data silos**, human error risks, and a **3-day turnaround** for simple reporting tasks.
-                        </p>
-                    </section>
-                    
-                    <div class="p-6 bg-red-500/5 border border-red-500/10 rounded-2xl">
-                        <h4 class="text-red-400 font-bold mb-2 flex items-center gap-2">
-                            <span class="material-symbols-outlined text-sm">warning</span> The Bottleneck
-                        </h4>
-                        <p class="text-sm text-on-surface-variant italic">
-                            Decision-makers lacked a "single source of truth" to monitor registration progress and demographic shifts in real-time.
-                        </p>
-                    </div>
+            <section class="mt-32 bg-white/5 p-12 rounded-[3rem] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Technical Deep Dive</h3>
+                    <p class="text-on-surface-variant">Download the full infographic summarizing the ETL architecture and KPI structures.</p>
                 </div>
-
-                <div class="lg:col-span-7 space-y-6">
-                    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                        <span class="text-primary">02.</span> The Strategic Solution
-                    </h2>
-                    
-                    <div class="glass-card p-6 rounded-2xl flex gap-6 group hover:bg-white/5 transition-colors">
-                        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined">database</span>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-white mb-2">Automated ETL Pipeline</h4>
-                            <p class="text-sm text-on-surface-variant">Engineered a robust pipeline to extract and transform regional data into a unified SQL Server warehouse.</p>
-                        </div>
-                    </div>
-
-                    <div class="glass-card p-6 rounded-2xl flex gap-6 group hover:bg-white/5 transition-colors">
-                        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined">monitoring</span>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-white mb-2">Executive Power BI Dashboards</h4>
-                            <p class="text-sm text-on-surface-variant">Developed interactive visualizations that allow for drill-down analysis of voter demographics by region.</p>
-                        </div>
-                    </div>
-
-                    <div class="glass-card p-6 rounded-2xl flex gap-6 group hover:bg-white/5 transition-colors">
-                        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined">security</span>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold text-white mb-2">Role-Based Access Control</h4>
-                            <p class="text-sm text-on-surface-variant">Implemented security layers to ensure data privacy and compliance with national electoral regulations.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <section class="mt-24 bg-gradient-to-br from-primary-container to-on-primary-container p-12 rounded-[3rem] text-center lg:text-left flex flex-col lg:flex-row items-center justify-between gap-8">
-                <div class="max-w-xl">
-                    <h2 class="text-3xl font-bold text-white mb-4">Deep Dive: Analytics Framework</h2>
-                    <p class="text-white/80">Get the full technical breakdown of the system architecture and the KPI structures implemented for the national registry.</p>
-                </div>
-                <a href="../assets/electoral_analytics_summary.pdf" download class="bg-white text-slate-950 px-10 py-5 rounded-2xl font-black flex items-center gap-3 hover:scale-105 transition-transform">
-                    <span class="material-symbols-outlined">download</span> DOWNLOAD CASE STUDY PDF
+                <a href="../assets/electoral_analytics_summary.pdf" download class="bg-primary text-slate-950 px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                    <span class="material-symbols-outlined">download</span> Download PDF Summary
                 </a>
             </section>
 
         </article>
     </main>
 
-    <footer class="py-12 border-t border-white/5 bg-slate-950">
-        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center text-xs uppercase tracking-widest text-slate-500">
-            <p>© 2026 Ronald Figueroa</p>
-            <p>Institutional Analytics Specialist</p>
-        </div>
+    <footer class="py-12 bg-slate-950 text-center text-xs uppercase tracking-widest text-slate-500">
+        <p>© 2026 Ronald Figueroa | Senior Business Analyst Portfolio</p>
     </footer>
 
 </body>
