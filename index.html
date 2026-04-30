@@ -28,6 +28,7 @@
     <style>
         body { background-color: #0b1326; color: #dae2fd; }
         .glass-card { background: rgba(23, 31, 51, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        /* Dot grid is removed to prioritize the network background image at the top */
         .dot-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0); background-size: 24px 24px; }
         .gradient-text { background: linear-gradient(135deg, #adc7ff 0%, #4a8eff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
@@ -40,45 +41,78 @@
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a class="text-primary border-b-2 border-primary pb-1" href="#home">Home</a>
                 <a class="text-slate-400 hover:text-white transition-colors" href="#projects">Projects</a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="#skills">Skills</a>
                 <a class="text-slate-400 hover:text-white transition-colors" href="#contact">Contact</a>
             </nav>
             <div class="flex items-center gap-4">
-                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" class="text-slate-400 hover:text-primary transition-colors">
+                <a href="https://www.linkedin.com/in/refigueroah" target="_blank" class="text-slate-400 hover:text-primary transition-colors">
                     <span class="material-symbols-outlined">link</span>
                 </a>
-                <a href="#contact" class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary transition-all">Work With Me</a>
             </div>
         </div>
     </header>
 
-    <main class="dot-grid pt-16">
-        <section class="relative min-h-[90vh] flex items-center px-8" id="home">
-    <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-12 relative z-10">
-        <div class="max-w-2xl">
-            <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4">Ronald Figueroa</h2>
-            <span class="text-xl md:text-2xl text-primary font-semibold mb-8 block">Senior Business Analyst & Data Specialist</span>
-            <p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
-                Former IT Manager with over 10 years of experience leading digital transformation and institutional optimization. MIT Applied Data Science graduate specialized in bridging the gap between complex technical infrastructure and strategic executive clarity.
-            </p>
-            <div class="flex flex-wrap gap-4">
-                <a class="bg-primary text-slate-950 px-8 py-4 rounded-xl font-bold hover:shadow-lg transition-all" href="#projects">Explore Case Studies</a>
-                <a class="border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-all" href="#contact">Get In Touch</a>
-            </div>
-        </div>
-        <div class="relative group">
-            <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-            <img src="./assets/profile_photo.jpg" alt="Ronald Figueroa" class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-slate-900 shadow-2xl">
-        </div>
+    <div class="relative w-full h-[60vh] bg-cover bg-center" style="background-image: url('./assets/background_network.jpg');">
+        <div class="absolute inset-0 bg-slate-950/70"></div>
     </div>
-</section>
+
+    <main class="-mt-[40vh] relative z-10 dot-grid">
+        <section class="relative min-h-[90vh] flex items-center px-8" id="home">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <h2 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4">Ronald Figueroa</h2>
+                    <span class="text-xl md:text-2xl text-primary font-semibold mb-8 block">Senior Business Analyst & Data Specialist</span>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight text-white/90">
+                        Transforming <span class="gradient-text">Complex Data</span> into Strategic Business Impact
+                    </h1>
+                    <p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
+                        Results-driven Senior Business Analyst and MBA graduate with over 15 years of experience translating complex data into actionable business insights. Expert in synthesizing large-scale datasets to drive strategic decision-making and delivering digital transformation roadmaps for national-scale institutions. 
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a class="bg-primary text-slate-950 px-8 py-4 rounded-xl font-bold hover:shadow-lg transition-all" href="#projects">Explore Case Studies</a>
+                        <a class="border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-all" href="mailto:refigueroah@gmail.com">Contact Me</a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                        <img src="./assets/profile_photo.jpg" alt="Ronald Figueroa" class="relative w-72 h-96 md:w-80 md:h-[450px] rounded-2xl object-cover border-2 border-white/10 shadow-2xl grayscale transition-all duration-300 group-hover:grayscale-0">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-8 py-16 border-y border-white/5">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-white mb-2">$15M+</div>
+                    <p class="text-xs uppercase tracking-widest text-slate-500">Budget Administration</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-white mb-2">95%</div>
+                    <p class="text-xs uppercase tracking-widest text-slate-500">Process Time Reduction</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-white mb-2">6.3M+</div>
+                    <p class="text-xs uppercase tracking-widest text-slate-500">Data Records Handled</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-extrabold text-white mb-2">98%+</div>
+                    <p class="text-xs uppercase tracking-widest text-slate-500">Delivery Success Rate</p>
+                </div>
+            </div>
+        </section>
 
         <section class="max-w-7xl mx-auto px-8 py-24" id="projects">
-            <div class="mb-16">
-                <span class="text-primary font-bold uppercase tracking-widest text-xs">Portfolio</span>
-                <h2 class="text-4xl font-bold text-white mt-2">Strategic Case Studies</h2>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+                <div>
+                    <span class="text-primary font-bold uppercase tracking-widest text-xs">Portfolio</span>
+                    <h2 class="text-4xl font-bold text-white mt-2">Strategic Case Studies & MIT Capstones</h2>
+                </div>
+                <a href="./the_senior_analyst_framework/index.html" class="text-primary hover:underline flex items-center gap-2">The Analyst Framework <span class="material-symbols-outlined">north_east</span></a>
             </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
                 <a class="glass-card rounded-2xl overflow-hidden group transition-all hover:ring-2 hover:ring-primary/50" href="./case_study_electoral_registry_analytics/index.html">
                     <div class="h-48 bg-slate-800 overflow-hidden">
                         <img src="./assets/electoral_preview.png" alt="Electoral Analytics" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
@@ -108,47 +142,87 @@
                         <img src="./assets/biometric_preview.png" alt="Biometrics" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
                     </div>
                     <div class="p-8">
-                        <span class="text-secondary text-xs font-bold uppercase">IoT & Security</span>
+                        <span class="text-secondary text-xs font-bold uppercase">IoT & Security Infrastructure</span>
                         <h3 class="text-xl font-bold mt-2 mb-4">Biometric Verification Kiosks</h3>
-                        <p class="text-on-surface-variant text-sm mb-6">Deployed 24/7 biometric kiosks reducing administrative fraud risk by 40%.</p>
+                        <p class="text-on-surface-variant text-sm mb-6">Deployed 24/7 automated biometric kiosks reducing identity fraud and streamlining attendance.</p>
                         <div class="flex items-center gap-2 text-primary text-sm font-bold">View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
                     </div>
                 </a>
+            </div>
+        </section>
 
+        <section class="max-w-7xl mx-auto px-8 py-24 bg-white/5 rounded-[3rem] my-12" id="skills">
+            <div class="text-center mb-16">
+                <span class="text-primary font-bold uppercase tracking-widest text-xs">Expertise</span>
+                <h2 class="text-4xl font-bold text-white mt-2">Core Competencies</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <span class="material-symbols-outlined text-primary mb-4">database</span>
+                    <h4 class="font-bold text-white">SQL & Python</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <span class="material-symbols-outlined text-primary mb-4">analytics</span>
+                    <h4 class="font-bold text-white">Data Storytelling</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <span class="material-symbols-outlined text-primary mb-4">bar_chart</span>
+                    <h4 class="font-bold text-white">Power BI & Tableau</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <span class="material-symbols-outlined text-primary mb-4">account_tree</span>
+                    <h4 class="font-bold text-white">Process Automation</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <span class="material-symbols-outlined text-primary mb-4">monitoring</span>
+                    <h4 class="font-bold text-white">ROI & Financial Modeling</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <span class="material-symbols-outlined text-primary mb-4">psychology</span>
+                    <h4 class="font-bold text-white">Predictive Analytics</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <span class="material-symbols-outlined text-primary mb-4">partner_exchange</span>
+                    <h4 class="font-bold text-white">Stakeholder Alignment</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <span class="material-symbols-outlined text-primary mb-4">rocket_launch</span>
+                    <h4 class="font-bold text-white">Digital Transformation</h4>
+                </div>
             </div>
         </section>
 
         <section class="max-w-7xl mx-auto px-8 py-24" id="contact">
-            <div class="glass-card rounded-[2.5rem] p-12 md:p-20 relative overflow-hidden">
+            <div class="glass-card rounded-[2.5rem] p-12 md:p-20 border border-primary/20">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     <div>
-                        <h2 class="text-4xl md:text-5xl font-bold mb-8">Ready to Optimize Your <span class="text-secondary">Operations?</span></h2>
-                        <p class="text-on-surface-variant text-lg mb-12">I am open to strategic roles or consulting projects where I can apply my 20+ years of digital transformation experience.</p>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-8">Let's Discuss Your Next <span class="text-primary">Data Strategy</span></h2>
+                        <p class="text-on-surface-variant text-lg mb-12 italic">"Bridging the gap between technical infrastructure and executive clarity."</p>
                         <div class="space-y-6">
                             <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary"><span class="material-symbols-outlined">mail</span></div>
-                                <div><p class="text-xs font-bold uppercase text-on-surface-variant">Email</p><p class="font-bold">yourname@email.com</p></div>
+                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"><span class="material-symbols-outlined">mail</span></div>
+                                <div><p class="text-xs font-bold uppercase text-on-surface-variant">Email</p><p class="font-bold">refigueroah@gmail.com</p></div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"><span class="material-symbols-outlined">location_on</span></div>
+                                <div><p class="text-xs font-bold uppercase text-on-surface-variant">Location</p><p class="font-bold">Milton, Ontario, Canada</p></div>
                             </div>
                         </div>
                     </div>
-                    <form class="space-y-6" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                        <input name="name" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 focus:border-primary focus:ring-0 outline-none" placeholder="Your Name" type="text" required>
-                        <input name="email" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 focus:border-primary focus:ring-0 outline-none" placeholder="Your Email" type="email" required>
-                        <textarea name="message" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 focus:border-primary focus:ring-0 outline-none" placeholder="Project Details" rows="4" required></textarea>
-                        <button type="submit" class="w-full bg-secondary text-slate-950 font-bold py-4 rounded-xl hover:opacity-90 transition-all">Send Inquiry</button>
+                    <form class="space-y-6">
+                        <input class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary" placeholder="Full Name" type="text">
+                        <input class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary" placeholder="Email Address" type="email">
+                        <textarea class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary" placeholder="Project Details" rows="4"></textarea>
+                        <button class="w-full bg-primary text-slate-950 font-bold py-4 rounded-xl hover:opacity-90 transition-all">Send Message</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="py-12 border-t border-white/5 bg-slate-950">
+    <footer class="py-12 border-t border-white/5 bg-slate-950 relative z-10">
         <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs uppercase tracking-widest text-slate-500">
-            <p>© 2026 Ronald Figueroa. Senior Business Analyst & Data Specialist.</p>
-            <div class="flex gap-8">
-                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" class="hover:text-white transition-colors">LinkedIn</a>
-                <a href="https://github.com/refigueroah" class="hover:text-white transition-colors">GitHub</a>
-            </div>
+            <p>© 2026 Ronald Figueroa. Senior Business Analyst Portfolio.</p>
         </div>
     </footer>
 
