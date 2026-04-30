@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Electronic Judicial Notifications | Ronald Figueroa</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#0b1326",
+                        "primary": "#adc7ff",
+                        "secondary": "#ffb68b",
+                        "on-surface-variant": "#c1c6d7",
+                        "primary-container": "#4a8eff",
+                        "on-primary-container": "#00285b"
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body { background-color: #0b1326; color: #dae2fd; }
+        .glass-card { background: rgba(23, 31, 51, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .dot-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0); background-size: 24px 24px; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-primary/30 dot-grid">
+
+    <header class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-16">
+            <div class="text-xl font-bold tracking-tighter text-white">Ronald Figueroa</div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a class="text-slate-400 hover:text-white transition-colors flex items-center gap-2" href="../index.html">
+                    <span class="material-symbols-outlined text-sm">arrow_back</span> Back to Portfolio
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <article class="max-w-5xl mx-auto px-8">
+            
+            <header class="mb-16">
+                <span class="text-primary font-bold uppercase tracking-widest text-xs mb-4 block">Process Automation & Digital Transformation</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">Electronic Judicial <br><span class="text-primary">Notification System</span></h1>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">Web Portal Development</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">Workflow Automation</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold text-primary">Digital Security</span>
+                </div>
+            </header>
+
+            <div class="space-y-24 mb-20">
+                
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-6">The Challenge: <br><span class="text-secondary">Physical Logistical Bottlenecks</span></h2>
+                        <div class="space-y-4 text-on-surface-variant leading-relaxed text-lg">
+                            <p>
+                                The traditional judicial notification process was entirely paper-based. Courier services were required to physically deliver legal notices to defense attorneys and prosecutors, a process that was slow, expensive, and difficult to track.
+                            </p>
+                            <p>
+                                This physical dependency caused massive delays in court proceedings. If a courier was delayed or a recipient wasn't found, the entire legal timeline stalled, increasing costs and extending the time victims and defendants spent in the system.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                        <h4 class="text-white font-bold mb-4 uppercase tracking-tighter text-sm">Operational Deficiencies:</h4>
+                        <ul class="space-y-4">
+                            <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-secondary">mail</span> High costs of physical delivery and logistics</li>
+                            <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-secondary">pending_actions</span> Frequent "lost" or disputed delivery attempts</li>
+                            <li class="flex gap-3 text-sm"><span class="material-symbols-outlined text-secondary">trending_down</span> Slow judicial throughput due to manual communication</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <div class="order-2 lg:order-1 glass-card p-2 rounded-3xl">
+                         <div class="bg-slate-900 rounded-2xl p-8 space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined">laptop_mac</span></div>
+                                <p class="text-sm font-bold">Secure External Web Portal</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined">mark_email_read</span></div>
+                                <p class="text-sm font-bold">Digital Receipt Tracking</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined">verified_user</span></div>
+                                <p class="text-sm font-bold">Encrypted Document Access</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl font-bold text-white mb-6">The Solution: <br><span class="text-primary">Instant Digital Communication</span></h2>
+                        <div class="space-y-4 text-on-surface-variant leading-relaxed text-lg">
+                            <p>
+                                I pioneered the design and rollout of a secure Electronic Judicial Notification Portal. This platform allowed legal professionals to receive and sign for official court documents instantly through a high-performance web interface.
+                            </p>
+                            <p>
+                                By replacing physical couriers with a digital-first approach, we established a verifiable, timestamped audit trail for every notification. This ensured legal compliance while virtually eliminating the geographical barriers of the justice system.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="glass-card rounded-[2.5rem] overflow-hidden mb-24 border border-white/10 shadow-2xl">
+                <div class="p-6 border-b border-white/5 bg-white/5 flex justify-between items-center">
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Portal Interface Preview</span>
+                    <div class="flex gap-1.5">
+                        <div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
+                    </div>
+                </div>
+                <img src="../assets/justice_preview.png" alt="Judicial Portal View" class="w-full h-auto">
+            </div>
+
+            <div class="space-y-24">
+                <section class="text-center">
+                    <h2 class="text-4xl font-bold text-white mb-12">Measurable Outcomes</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="p-10 rounded-3xl bg-primary-container/10 border border-primary-container/20">
+                            <div class="text-5xl font-black text-primary mb-2">95%</div>
+                            <p class="text-sm text-on-surface-variant uppercase tracking-widest font-bold">Service Time Reduction</p>
+                        </div>
+                        <div class="p-10 rounded-3xl bg-primary-container/10 border border-primary-container/20">
+                            <div class="text-5xl font-black text-primary mb-2">100%</div>
+                            <p class="text-sm text-on-surface-variant uppercase tracking-widest font-bold">Delivery Accountability</p>
+                        </div>
+                        <div class="p-10 rounded-3xl bg-primary-container/10 border border-primary-container/20">
+                            <div class="text-5xl font-black text-primary mb-2">Instant</div>
+                            <p class="text-sm text-on-surface-variant uppercase tracking-widest font-bold">Case Progress Sync</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white/5 p-12 rounded-[3rem] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Implementation Summary</h3>
+                        <p class="text-on-surface-variant">Download the visual breakdown of the transition from manual to digital notifications.</p>
+                    </div>
+                    <a href="../assets/judicial_notification.png" download class="bg-primary text-slate-950 px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                        <span class="material-symbols-outlined">download</span> Download PDF Summary
+                    </a>
+                </section>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="py-12 bg-slate-950 text-center text-xs uppercase tracking-widest text-slate-500">
+        <p>© 2026 Ronald Figueroa | Senior Business Analyst Portfolio</p>
+    </footer>
+
+</body>
+</html>
