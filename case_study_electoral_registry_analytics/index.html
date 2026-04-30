@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Case Study: Electoral Analytics | Ronald Figueroa</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#0b1326",
+                        "primary": "#adc7ff",
+                        "secondary": "#ffb68b",
+                        "on-surface-variant": "#c1c6d7",
+                        "primary-container": "#4a8eff",
+                        "on-primary-container": "#00285b"
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body { background-color: #0b1326; color: #dae2fd; }
+        .glass-card { background: rgba(23, 31, 51, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .dot-grid { background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0); background-size: 24px 24px; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-primary/30">
+
+    <header class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-16">
+            <div class="text-xl font-bold tracking-tighter text-white">Ronald Figueroa</div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a class="text-slate-400 hover:text-white transition-colors" href="../index.html">← Back to Portfolio</a>
+                <a class="text-primary border-b-2 border-primary pb-1" href="#overview">Overview</a>
+                <a class="text-slate-400 hover:text-white transition-colors" href="#impact">Impact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="https://www.linkedin.com/in/refigueroah" target="_blank" class="text-slate-400 hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined">link</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="dot-grid pt-32 pb-24">
+        <article class="max-w-4xl mx-auto px-8">
+            <header class="mb-16">
+                <span class="text-secondary font-bold uppercase tracking-widest text-xs">Business Intelligence & Automation</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mt-4 mb-8">Electoral Registry Analytics Platform</h1>
+                <div class="flex flex-wrap gap-4 text-sm">
+                    <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full">Focus: Real-time Reporting</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full">Scope: National (Multi-branch)</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-2 rounded-full">Tech: SQL Server, Power BI</span>
+                </div>
+            </header>
+
+            <div class="glass-card rounded-3xl overflow-hidden mb-16 aspect-video">
+                <img src="../assets/electoral_preview.png" alt="Electoral Dashboard Overview" class="w-full h-full object-cover">
+            </div>
+
+            <div class="space-y-16">
+                <section id="overview">
+                    <h2 class="text-2xl font-bold text-white mb-4">Project Context</h2>
+                    <p class="text-on-surface-variant leading-relaxed text-lg">
+                        Managing a national electoral registry requires extreme precision and accessibility. Before this intervention, data requests were processed manually across various branches, leading to significant delays and potential for human error.
+                    </p>
+                </section>
+
+                <section id="solution" class="glass-card p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-white mb-4">The Solution</h2>
+                    <ul class="space-y-4 text-on-surface-variant">
+                        <li class="flex gap-3"><span class="material-symbols-outlined text-primary">analytics</span> Engineered an automated ETL (Extract, Transform, Load) pipeline to unify regional databases.</li>
+                        <li class="flex gap-3"><span class="material-symbols-outlined text-primary">dashboard</span> Designed interactive executive dashboards for real-time monitoring of voter registration.</li>
+                        <li class="flex gap-3"><span class="material-symbols-outlined text-primary">security</span> Implemented role-based access control to protect sensitive citizen information.</li>
+                    </ul>
+                </section>
+
+                <section id="impact">
+                    <h2 class="text-2xl font-bold text-white mb-4">Strategic Impact</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="p-6 rounded-xl bg-white/5 border border-white/5">
+                            <h4 class="text-secondary font-bold mb-2">Operational Speed</h4>
+                            <p class="text-sm text-on-surface-variant">Reduced data request fulfillment time from 3 business days to under 5 seconds via self-service dashboards.</p>
+                        </div>
+                        <div class="p-6 rounded-xl bg-white/5 border border-white/5">
+                            <h4 class="text-secondary font-bold mb-2">Decision Accuracy</h4>
+                            <p class="text-sm text-on-surface-variant">Eliminated reporting discrepancies between regional and central offices by 100%.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="border-t border-white/10 pt-16">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-8 bg-primary-container/10 p-8 rounded-3xl border border-primary-container/20">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Deep Dive into the Data</h3>
+                            <p class="text-sm text-on-surface-variant">Download the visual summary of the Analytics Framework and KPI structures.</p>
+                        </div>
+                        <a href="../assets/electoral_analytics_summary.pdf" download="Ronald_Figueroa_Electoral_Analytics">
+                            <button class="bg-primary-container text-on-primary-container px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                                <span class="material-symbols-outlined">download</span> Download Infographic
+                            </button>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-8 flex justify-center text-xs uppercase tracking-widest text-slate-500">
+            <p>© 2026 Ronald Figueroa. Senior Business Analyst.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
